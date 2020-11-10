@@ -109,6 +109,9 @@ img {
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    .centrar-columnas{
+        justify-content: center;
+    }
     .columnas-4 {
         flex: 0 0 calc(33.3% - 1rem);
     }
@@ -119,7 +122,7 @@ img {
         flex: 0 0 calc(66.6% - 1rem);
     }
     .columnas-10 {
-        background-color: #ffffff;
+        flex: 0 0 calc(83.3% - 1rem);
     }
     .columnas-12 {
         flex: 0 0 100%;
@@ -133,18 +136,23 @@ img {
     display: block;
     text-align: center;
     padding: 1rem 3rem;
-    margin: 2rem;
+    margin: 2rem 0;
     color: #ffffff;
     text-decoration: none;
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 2rem;
+    flex: 0 0 100%;
+}
+.btn:hover {
+    cursor: pointer;
 }
 
 @media (min-width:768px) {
     .btn {
         display: inline-block;
+        flex: 0 0 auto;
     }
 }
 
@@ -291,7 +299,7 @@ img {
 
 /*CONTACTO*/
 .formulario-contacto {
-    background-color: #ffffff;
+    background-color: #ee0404;
 }
 
 @media (min-width:768px) {
