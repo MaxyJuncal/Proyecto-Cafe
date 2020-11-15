@@ -299,12 +299,35 @@ img {
 
 /*CONTACTO*/
 .formulario-contacto {
-    background-color: #ee0404;
+    background-color: #ffffff;
+    padding: 5rem;
+    
 }
 
 @media (min-width:768px) {
     .formulario-contacto {
         margin-top: -10rem;
     }
-      
+}
+
+.formulario-contacto .campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.formulario-contacto .campo label {
+    flex: 0 0 8rem;
+}
+.formulario-contacto .campo input:not([type="submit"]) , textarea {
+    flex: 1;
+    border: #e1e1e1 solid;
+    padding: 1rem;
+}
+.formulario-contacto textarea {
+    height: 20rem;
+}
+.formulario-contacto .enviar {
+    display: flex;
+    justify-content: flex-end;
 }
